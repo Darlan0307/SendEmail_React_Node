@@ -35,9 +35,18 @@
       }
     }
 
+    .container-animation{
+      width: 80%;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+
     .subtitle,.subtitle-2{
       word-break: break-all;
       color: #0076B9;
+      
+    }
+    .subtitle-2{
       margin-top: 1em;
     }
 
