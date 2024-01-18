@@ -1,11 +1,11 @@
 .container-userform{
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 1em;
   border: 2px solid #0076B9;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   .content-header{
     background-color: #0076B9;
     display: flex;
@@ -16,6 +16,7 @@
     padding: 20px;
     h2,p{
       color: #eaeaea;
+      text-align: center;
     }
   }
 
