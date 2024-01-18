@@ -1,0 +1,12 @@
+.container-app{
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  .app{
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+  }
+}
+
