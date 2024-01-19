@@ -9,22 +9,22 @@ const Rodape = () => {
         <h2>Contatos</h2>
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/darlan-martins-8a7956259/" target='_blank'>
               <FaLinkedin/>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/Darlan0307" target='_blank'>
               <FaGithub/>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.youtube.com/@darlanmartins7546/videos" target='_blank'>
               <FaYoutube/>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/darlan_sw_/" target='_blank'>
               <FaInstagram/>
             </a>
           </li>
@@ -35,7 +35,7 @@ const Rodape = () => {
       </div>
       <div className='other'>
         <p>Veja outros projetos</p>
-        <a href="#">
+        <a href="https://projecthubdarlan.netlify.app/" target='_blank'>
           <FaExternalLinkAlt/>
         </a>
       </div>
