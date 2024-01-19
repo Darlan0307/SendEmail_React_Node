@@ -1,21 +1,25 @@
 import { FormEvent, useState } from 'react'
 import './styles.scss'
 import { ValidateEmail } from '../../utils/ValidateEmail'
+import LottieAnimation from '../Lottie/LottieAnimation'
 
 const UserForm = () => {
 
   const [email,setEmail] = useState('')
+  const [isLoader,setIsLoader] = useState(false)
 
-  const handleSubmit = (event:FormEvent) => {
+  const handleSubmit = async(event:FormEvent) => {
     event.preventDefault() 
-    const response = ValidateEmail(email)
+    const response = await ValidateEmail({email,setIsLoader})
 
+    console.log(response);
     
   }
 
 
   return (
-    <div className='container-userform'>
+    <>
+      <div className='container-userform'>
       <div className='content-header'>
         <h2>Pesquisa Rápida!</h2>
         <p>Queremos saber sua relação com a tecnologia</p>
@@ -81,6 +85,15 @@ const UserForm = () => {
         <button className='btn' type='submit'> Enviar </button>
       </form>
     </div>
+      {isLoader && (
+        <div className='container-loader'>
+          <h1>Carregando...</h1>
+          <div className='loader'>
+            <LottieAnimation/>
+          </div>
+        </div>
+      )}
+    </>
   )
 }
 
