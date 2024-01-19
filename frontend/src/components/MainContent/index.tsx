@@ -2,7 +2,7 @@ import UserForm from '../UserForm'
 import './styles.scss'
 import { FiPhoneCall } from "react-icons/fi";
 import { FaBook,FaTools,FaUmbrellaBeach } from "react-icons/fa";
-import LottieAnimation from '../Lottie/LottieAnimation';
+
 
 const MainContent = () => {
   return (
