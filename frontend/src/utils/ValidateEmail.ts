@@ -14,8 +14,13 @@ function validateEmailRegex(email: string): boolean {
 export const ValidateEmail = async({email,setIsLoader}:ValidadeProps) => {
 
   if(!validateEmailRegex(email)){
+    setIsLoader(true)
     
-    toast.warn("email inválido")
+    setTimeout(()=>{
+      setIsLoader(false)
+      toast.warn("email inválido")
+    },2000)
+    
     return false
   }
 
