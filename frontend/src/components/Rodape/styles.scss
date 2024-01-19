@@ -1,0 +1,73 @@
+.container-rodape{
+  margin-top: 5em;
+  background-color: #0076B9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 15px;
+  gap: 2em;
+  width: 100%;
+
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    h2{
+      color: #eaeaea;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+      li a{
+        text-decoration: none;
+        svg{
+          fill: #eaeaea;
+          font-size: 30px;
+          transition: all .5s;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+
+
+  .autor{
+    p{
+      color: #eaeaea;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  }
+
+
+  .other{
+
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+    p{
+      color: #eaeaea;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    a{
+      text-decoration: none;
+        svg{
+          fill: #eaeaea;
+          font-size: 25px;
+          transition: all .5s;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+    }
+  }
+}

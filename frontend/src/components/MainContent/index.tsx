@@ -2,6 +2,7 @@ import UserForm from '../UserForm'
 import './styles.scss'
 import { FiPhoneCall } from "react-icons/fi";
 import { FaBook,FaTools,FaUmbrellaBeach } from "react-icons/fa";
+import LottieAnimation from '../Lottie/LottieAnimation';
 
 
 const MainContent = () => {
@@ -10,9 +11,9 @@ const MainContent = () => {
       <section className='content-text'>
         <h1 className='title'>Você gosta de tecnologia?</h1>
 
-        {/* <div className='container-animation'>
+        <div className='container-animation'>
           <LottieAnimation/>
-        </div> */}
+        </div>
 
         <h2 className='subtitle'>Produtividade, eficiência e informação</h2>
         <p className='text'>Não é novidade para ninguém que nos ultimos tempos a tecnologia só está evoluindo e isso é muito bom, porque a tecnologia está presente em todos os aspectos da nossa vida, desde a forma como nos comunicamos até a maneira como trabalhamos e nos divertimos.</p>

@@ -1,4 +1,5 @@
 import MainContent from "../MainContent"
+import Rodape from "../Rodape"
 import TopHeader from "../TopHeader"
 import './styles.scss'
 
@@ -9,6 +10,7 @@ const LandingPage = () => {
         <TopHeader/>
         <MainContent/>
       </div>
+        <Rodape/>
     </div>
   )
 }
