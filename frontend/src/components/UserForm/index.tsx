@@ -1,18 +1,33 @@
+import { FormEvent, useState } from 'react'
 import './styles.scss'
+import { ValidateEmail } from '../../utils/ValidateEmail'
 
 const UserForm = () => {
+
+  const [email,setEmail] = useState('')
+
+  const handleSubmit = (event:FormEvent) => {
+    event.preventDefault() 
+    const response = ValidateEmail(email)
+
+    
+  }
+
+
   return (
     <div className='container-userform'>
       <div className='content-header'>
         <h2>Pesquisa Rápida!</h2>
         <p>Queremos saber sua relação com a tecnologia</p>
       </div>
-      <form className='form'>
+      <form className='form' onSubmit={handleSubmit}>
         <div className='wrap-input'>
-          <input type="text" placeholder='Nome' required/>
+          <input type="text" placeholder='Nome' required min={3}/>
         </div>
         <div className='wrap-input'>
-          <input type="email" placeholder='Email' required/>
+          <input type="email" placeholder='Email' required
+          onChange={(e)=>setEmail(e.target.value)}
+          />
         </div>
         <div className='wrap-input-radio'>
           <span className='question'>Você usa tecnologia no dia a dia?</span>
@@ -51,7 +66,7 @@ const UserForm = () => {
             </div>
             <div>
               <input type="radio" id='nao-3' name='radio3' required/>
-              <label htmlFor="nao-2">Não</label>
+              <label htmlFor="nao-3">Não</label>
             </div>
           </div>
         </div>
