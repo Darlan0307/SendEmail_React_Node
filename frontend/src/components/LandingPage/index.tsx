@@ -1,17 +1,28 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import MainContent from "../MainContent"
 import Rodape from "../Rodape"
 import TopHeader from "../TopHeader"
 import './styles.scss'
+import Feedback from "../Feedback"
 
 const LandingPage = () => {
   return (
-    <div className="container-app">
-      <div className="app">
-        <TopHeader/>
-        <MainContent/>
+    <BrowserRouter>
+      <div className="container-app">
+        <div className="app">
+          <Routes>
+            <Route index element={
+              <>
+                <TopHeader/>
+                <MainContent/>
+              </>
+            }/>
+            <Route path="sendemail" element={<Feedback/>}/>
+          </Routes>
+        </div>
+          <Rodape/>
       </div>
-        <Rodape/>
-    </div>
+    </BrowserRouter>
   )
 }
 
