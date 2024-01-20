@@ -34,8 +34,9 @@ const Rodape = () => {
         <p>Darlan Martins &copy; - 2024</p>
       </div>
       <div className='other'>
-        <p>Veja outros projetos</p>
+        
         <a href="https://projecthubdarlan.netlify.app/" target='_blank'>
+          <p>Veja outros projetos</p>
           <FaExternalLinkAlt/>
         </a>
       </div>

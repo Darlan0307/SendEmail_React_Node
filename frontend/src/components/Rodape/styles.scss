@@ -52,14 +52,12 @@
     align-items: center;
     gap: .5em;
 
-    p{
-      color: #eaeaea;
-      font-size: 1.1em;
-      font-weight: bold;
-    }
 
     a{
-      text-decoration: none;
+      text-decoration-color: #eaeaea;
+      display: flex;
+      align-items: center;
+      gap: .5em;
         svg{
           fill: #eaeaea;
           font-size: 25px;
@@ -67,6 +65,13 @@
           &:hover{
             transform: scale(1.2);
           }
+        }
+
+        p{
+          color: #eaeaea;
+          font-size: 1.1em;
+          font-weight: bold;
+
         }
     }
   }
