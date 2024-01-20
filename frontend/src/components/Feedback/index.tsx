@@ -12,6 +12,8 @@ const Feedback = () => {
 
 
   useEffect(()=>{
+    window.scrollTo(0,0)
+
     async function sendEmail(email:string) {
       try {
         await myApi.post("/email",{email})
