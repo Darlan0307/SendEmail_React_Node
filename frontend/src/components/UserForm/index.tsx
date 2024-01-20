@@ -1,9 +1,9 @@
 import { FormEvent, useState } from 'react'
 import './styles.scss'
 import { ValidateEmail } from '../../utils/ValidateEmail'
-import LottieAnimation from '../Lottie/LottieAnimation'
 import { useNavigate } from 'react-router-dom'
 import { UseUser } from '../../context/UserContext'
+import LoaderAnimation from '../Lottie/LoaderAnimation'
 
 const UserForm = () => {
 
@@ -22,7 +22,6 @@ const UserForm = () => {
     navigate("/sendemail")
     
   }
-
 
   return (
     <>
@@ -96,7 +95,7 @@ const UserForm = () => {
         <div className='container-loader'>
           <h1>Carregando...</h1>
           <div className='loader'>
-            <LottieAnimation/>
+            <LoaderAnimation/>
           </div>
         </div>
       )}

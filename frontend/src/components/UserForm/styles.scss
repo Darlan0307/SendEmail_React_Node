@@ -36,14 +36,10 @@
         color: #242424;
         outline: none;
         border: none;
-        border-bottom: 1px solid #333;
+        border-bottom: 2px solid #333;
         padding: 10px;
-        transition: all .5s;
-        
-
         &:focus{
-          border-radius:20px;
-          border: 1px solid #333;
+          border-color: #0076B9;
         }
       }
     }
@@ -57,8 +53,6 @@
       flex-direction: column;
 
       gap: .5em;
-
-      
 
       .alternative{
         display: flex;
@@ -125,7 +119,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+  background-color: #4b4a4a;
   z-index: 20;
 
   h1{

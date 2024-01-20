@@ -32,6 +32,7 @@ export const ValidateEmail = async({email,setIsLoader}:ValidadeProps) => {
     
     
     if(response.data.data.status == "invalid"){
+      setIsLoader(false)
       toast.warn("email não existe")
       return false
     }
