@@ -36,8 +36,9 @@ export const ValidateEmail = async({email,setIsLoader}:ValidadeProps) => {
       return false
     }
 
-    toast.success("Obrigado por responder o formulário!")
     setIsLoader(false)
+    toast.success("Obrigado por responder o formulário!")
+
     return true
   } catch (error) {
     console.log("ERROR:",error);

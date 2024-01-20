@@ -2,17 +2,24 @@ import { FormEvent, useState } from 'react'
 import './styles.scss'
 import { ValidateEmail } from '../../utils/ValidateEmail'
 import LottieAnimation from '../Lottie/LottieAnimation'
+import { useNavigate } from 'react-router-dom'
+import { UseUser } from '../../context/UserContext'
 
 const UserForm = () => {
 
   const [email,setEmail] = useState('')
   const [isLoader,setIsLoader] = useState(false)
+  const navigate = useNavigate()
+  const {setUserEmail} = UseUser()
 
   const handleSubmit = async(event:FormEvent) => {
     event.preventDefault() 
     const response = await ValidateEmail({email,setIsLoader})
 
-    console.log(response);
+    if(!response) return;
+
+    setUserEmail(email)
+    navigate("/sendemail")
     
   }
 

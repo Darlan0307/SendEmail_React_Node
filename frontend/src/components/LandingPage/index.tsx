@@ -17,7 +17,7 @@ const LandingPage = () => {
                 <MainContent/>
               </>
             }/>
-            <Route path="sendemail" element={<Feedback/>}/>
+            <Route path="/sendemail" element={<Feedback/>}/>
           </Routes>
         </div>
           <Rodape/>

@@ -1,6 +1,6 @@
 import Lottie from 'lottie-web';
 import { useEffect, useRef } from 'react';
-import animationData from '../../../Animations/AnimateRobo.json'; // Carregue o arquivo JSON da animação aqui
+import animationData from '../../../Animations/AnimateRobo.json';
 
 const LottieAnimation = () => {
   const lottieContainer = useRef<HTMLDivElement>(null);
